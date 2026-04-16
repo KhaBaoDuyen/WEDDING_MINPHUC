@@ -91,7 +91,7 @@ function WeddingHero() {
                 </div>
 
                 <div className="flex justify-between items-center">
-                    <p className="italic mb-4 great-vibes-regular text-3xl">Chỉ còn....</p>
+                    <p className="italic mb-4 great-vibes-regular text-2xl">Chỉ còn....</p>
 
                     <div className="flex gap-3">
                         {[

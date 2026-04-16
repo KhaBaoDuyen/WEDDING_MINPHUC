@@ -77,7 +77,7 @@ function Home() {
   return (
     <>
 
-      <div className="relative w-full h-screen overflow-hidden ">
+      <div className="relative w-full h-[80vh] overflow-hidden ">
         <img
           src="/images/SAM11489.jpg"
           className="absolute inset-0 w-full h-full object-cover object-center"
@@ -302,7 +302,7 @@ function Home() {
               initial={{ opacity: 0, y: 80 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              viewport={{ once: true }} className="flex justify-center items-center gap-2 mt-2 text-3xl">
+              viewport={{ once: true }} className="flex justify-center items-center gap-2 mt-2 text-2xl">
               <h1 className="text-center playfair-display-700">09:00</h1>
               <h1 className="text-center playfair-display-700">|</h1>
               <h1 className="text-center playfair-display-700">02.05.2026</h1>
@@ -327,23 +327,17 @@ function Home() {
               className="flex flex-col justify-center items-center gap-2">
               <h1 className="text-center playfair-display-700 text-2xl">Tư Gia Nhà Gái</h1>
               <h1 className="text-md text-center"> Khóm 1, Ấp Thường Phước, huyện Hồng Ngự, tỉnh Đồng Tháp</h1>
-              <div
-                className="map w-full h-[200px] overflow-hidden cursor-pointer"
-                onClick={() =>
-                  window.open(
-                    "https://www.google.com/maps/dir/?api=1&destination=10.8082273,105.23993",
-                    "_blank"
-                  )
-                }
+              <a
+                href="https://www.google.com/maps/dir/?api=1&destination=10.8082273,105.23993"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full h-[200px]"
               >
                 <iframe
                   src="https://www.google.com/maps?q=10.8082273,105.23993&z=15&output=embed"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  loading="lazy"
+                  className="w-full h-full pointer-events-none"
                 />
-              </div>
+              </a>
             </motion.div>
           </div>
         </div>
