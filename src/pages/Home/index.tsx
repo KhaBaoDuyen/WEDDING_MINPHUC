@@ -61,16 +61,10 @@ function Home() {
   //KHACH
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
-    const rawName = params.get("name");
+    const name = params.get("name");
 
-    if (rawName) {
-      const decoded = decodeURIComponent(rawName);
-
-      const formatted = decoded
-        .toLowerCase()
-        .replace(/\b\w/g, (c) => c.toUpperCase());
-
-      setGuestName(formatted);
+    if (name) {
+      setGuestName(name);
     }
   }, []);
 
