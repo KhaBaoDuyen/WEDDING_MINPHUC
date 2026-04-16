@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import "./style.css";
 import { Heart } from "lucide-react";
 import WeddingHero from "../../components/WeddingHero";

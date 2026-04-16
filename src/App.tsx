@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import Landing from "./pages/Landing";
 import Home from "./pages/Home";
 import "./App.css";

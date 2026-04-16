@@ -6,7 +6,7 @@ const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz22q9wdfo8kd5mDV0f7
 
 export default function WishLive() {
     const [messages, setMessages] = useState<any[]>([]);
-    const [visibleMessages, setVisibleMessages] = useState<any[]>([]);
+    const [, setVisibleMessages] = useState<any[]>([]);
     const [showForm, setShowForm] = useState(false);
     const [form, setForm] = useState({ name: "", text: "" });
     const [loading, setLoading] = useState(false);
