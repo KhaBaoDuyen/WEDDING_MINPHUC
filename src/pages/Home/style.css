@@ -1,0 +1,32 @@
+.particle {
+  position: absolute;
+  bottom: -20px;
+  left: calc(100% * var(--x));
+  width: 6px;
+  height: 6px;
+  background: rgba(255, 223, 150, 0.8);
+  border-radius: 50%;
+  filter: blur(2px);
+  animation: floatUp linear infinite;
+  animation-duration: calc(5s + 5s * var(--speed));
+  opacity: 0.7;
+}
+
+ .particle:nth-child(n) {
+  --x: calc(random() * 1);
+  --speed: calc(random() * 1);
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) translateX(0) scale(0.5);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120vh) translateX(30px) scale(1.2);
+    opacity: 0;
+  }
+}

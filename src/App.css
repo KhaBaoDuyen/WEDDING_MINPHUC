@@ -1,0 +1,45 @@
+.text-luxury {
+  color: #E8D29B;
+  text-shadow:
+    0 1px 2px rgba(0,0,0,0.3),
+    0 3px 6px rgba(0,0,0,0.25),
+    0 6px 12px rgba(0,0,0,0.2);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Ẩn scrollbar Firefox */
+* {
+  scrollbar-width: none;
+}
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 6s linear infinite;
+}
+
+.bg-main {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url(../public/images/SAM11489.jpg) no-repeat center center;
+  background-size: cover;
+  filter: blur(8px);
+  transform: scale(1.1);
+  z-index: -1;
+}
