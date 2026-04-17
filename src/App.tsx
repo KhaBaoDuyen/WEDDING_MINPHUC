@@ -41,7 +41,7 @@ function App() {
           ref={(el) => {
             audioRef.current = el;
           }}
-          src="/audio/snaptt.me-37205712.m4a"
+          src="/audio/snaptt.me-37205712.mp3"
           loop
           playsInline
           preload="auto"
