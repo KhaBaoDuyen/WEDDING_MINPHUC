@@ -99,7 +99,7 @@ export default function WishLive() {
 
             {showForm && (
                 <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/40">
-                    <div className="bg-white w-full  rounded-t-3xl p-6 relative">
+                    <div className="bg-white w-full max-w-[480px] rounded-t-3xl p-6 relative">
 
                         <button
                             onClick={() => setShowForm(false)}
