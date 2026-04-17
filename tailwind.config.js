@@ -18,6 +18,9 @@ export default {
         'nunito': ['Nunito', 'sans-serif'],
         'dm-serif-display': ['"DM Serif Display"', 'serif'],
       },
+       screens: {
+        xs: "350px",
+      },
     },
   },
   plugins: [],

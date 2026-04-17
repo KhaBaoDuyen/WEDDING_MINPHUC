@@ -181,9 +181,9 @@ function Home() {
         </h1>
 
         <div className="">
-          <div className="grid grid-cols-2 gap-5 ">
-            <div className="">
-              <div className="flex flex-col gap-3">
+          <div className="grid grid-cols-1 xs:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 items-end gap-4">
+              <div className="flex flex-col gap-3 ">
                 <motion.div
                   initial={{ opacity: 0, x: -80 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -197,8 +197,9 @@ function Home() {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.3, duration: 0.6 }}
                   viewport={{ once: true }}
-                  className="font-bold playfair-display-700 text-center text-xs text-Gold uppercase">
-                  <p>ÔNG: Nguyễn Đình Thành </p>
+                  className="font-bold playfair-display-700 text-center  leading-tight
+                  break-words text-xs max-[350px]:text-[10px] text-Gold uppercase ">
+                  <p >ÔNG: Nguyễn Đình Thành</p>
                   <p>BÀ: Hoàng Thị Tám</p>
                 </motion.div>
                 <motion.div
@@ -210,12 +211,13 @@ function Home() {
                   Xóm 1-10, xã Trung Lộc, huyện Nghi Lộc, tỉnh Nghệ An
                 </motion.div>
               </div>
+
               <motion.div initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.7, duration: 0.6 }}
                 viewport={{ once: true }}
                 className="mt-3 flex flex-col gap-3">
-                <div className="w-full h-[281px] overflow-hidden">
+                <div className="w-full aspect-[3/4] overflow-hidden">
                   <img
                     src="./images/trai.jpg"
                     alt=""
@@ -225,7 +227,8 @@ function Home() {
               </motion.div>
             </div>
 
-            <div className="">
+            <div className="grid grid-cols-1 items-end gap-4">
+
               <div className="flex flex-col gap-3">
                 <motion.div
                   initial={{ opacity: 0, x: 80 }}
@@ -240,7 +243,9 @@ function Home() {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.3, duration: 0.6 }}
                   viewport={{ once: true }}
-                  className="font-bold text-center playfair-display-700 text-xs text-Gold uppercase">
+                  className="font-bold text-center playfair-display-700 text-xs
+                  max-[350px]:text-[10px] text-Gold uppercase  leading-tight
+                  break-words">
                   <p>ÔNG: Võ Minh Dưỡng </p>
                   <p>BÀ: Thái Thị Mỹ Loan</p>
                 </motion.div>
@@ -259,7 +264,7 @@ function Home() {
                 transition={{ delay: 0.7, duration: 0.6 }}
                 viewport={{ once: true }}
                 className="mt-3 flex flex-col gap-3">
-                <div className="w-full h-[281px] overflow-hidden">
+                <div className="w-full aspect-[3/4] overflow-hidden">
                   <img
                     src="./images/gai.jpg"
                     alt=""
@@ -276,16 +281,16 @@ function Home() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.9, duration: 0.6 }}
               viewport={{ once: true }}
-              className="text-center text-Gold great-vibes-regular text-4xl">
+              className="text-center text-Gold great-vibes-regular text-3xl">
               Đình Tài
             </motion.div>
-            <img src="./images/hoa.png" alt="" className="w-20 h-20" />
+            <img src="./images/hoa.png" alt="" className="w-16 h-16" />
             <motion.p
               initial={{ opacity: 0, x: 80 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ delay: 1.1, duration: 0.6 }}
               viewport={{ once: true }}
-              className="text-center text-Gold great-vibes-regular text-4xl">
+              className="text-center text-Gold great-vibes-regular text-3xl">
               Minh Phúc
             </motion.p>
           </div>

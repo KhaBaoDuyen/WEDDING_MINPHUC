@@ -13,11 +13,11 @@ const images = [
 function Gallery() {
   return (
     <div className="w-full">
-      <div className="grid grid-cols-3 gap-2 auto-rows-[200px] md:auto-rows-[200px]">
+      <div className="grid grid-cols-3 gap-2  ">
         {images.map((img, index) => (
           <motion.div
             key={index}
-            className={`relative overflow-hidden ${img.span}`}
+            className={`relative overflow-hidden ${img.span} aspect-[3/4] sm:aspect-square`}
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{

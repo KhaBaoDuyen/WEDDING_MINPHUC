@@ -36,12 +36,12 @@ function App() {
 
   return (
     <div className="bg-main min-h-screen flex justify-center items-center">
-      <div className="w-full max-w-[430px] min-h-screen bg-Linen relative overflow-hidden">
+      <div className="w-full max-w-[480px] min-h-screen bg-Linen relative overflow-hidden">
         <audio
           ref={(el) => {
             audioRef.current = el;
           }}
-          src="/audio/snaptt.me-37205712.mp3"
+          src="/audio/snaptt.me-37205712.m4a"
           loop
           playsInline
           preload="auto"
@@ -59,8 +59,7 @@ function App() {
               setIsPlaying(false);
             }
           }}
-          className="fixed top-2 right-2 z-50 w-16 h-16 rounded-full p-[5px] bg-Red shadow-lg hover:scale-105 transition"
-        >
+          className="fixed top-2 right-2 z-50 w-10 h-10 xs:w-12 xs:h-12 rounded-full p-[2px] xs:p-[3px] bg-Wine shadow-lg hover:scale-105 transition"        >
           <div className="w-full h-full rounded-full overflow-hidden relative">
 
             <img

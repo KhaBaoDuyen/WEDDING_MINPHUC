@@ -43,3 +43,13 @@
   transform: scale(1.1);
   z-index: -1;
 }
+
+.text-hero-big {
+  font-size: clamp(2.5rem, 8vw, 6rem);
+  line-height: 1;
+}
+
+.text-hero-small {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  line-height: 1;
+}

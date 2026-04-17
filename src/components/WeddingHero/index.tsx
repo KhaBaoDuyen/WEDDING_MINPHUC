@@ -32,7 +32,7 @@ function WeddingHero() {
     const daysInMonth = 31;
 
     return (
-        <div className="relative w-full h-screen overflow-hidden">
+        <div className="relative w-full h-[70vh] overflow-hidden">
             <style>
                 {`
                 @keyframes floatUpDown {
@@ -90,8 +90,8 @@ function WeddingHero() {
                     </div>
                 </div>
 
-                <div className="flex justify-between items-center">
-                    <p className="italic mb-4 great-vibes-regular text-2xl">Chỉ còn....</p>
+                <div className="flex flex-col xs:gap-2 xs:flex-row justify-between xs:items-center">
+                    <p className="italic mb-4 great-vibes-regular text-[2rem] xs:text-md">Chỉ còn....</p>
 
                     <div className="flex gap-3">
                         {[
