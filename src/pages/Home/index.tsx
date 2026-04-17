@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 function Home() {
   const [particles, setParticles] = useState<number[]>([]);
   const [guestName, setGuestName] = useState("Quý khách");
-  const [showWish, setShowWish] = useState(true);
+  const [showWish, setShowWish] = useState(false);
 
   useEffect(() => {
     setParticles(Array.from({ length: 30 }, (_, i) => i));

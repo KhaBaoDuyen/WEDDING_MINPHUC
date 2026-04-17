@@ -79,7 +79,6 @@ export default function WishLive() {
                 </div>
             )}
 
-            {/* 🔥 LIST CHẠY */}
             <div className="fixed bottom-20 left-2 z-50 w-[70%] h-[200px] overflow-hidden pointer-events-none">
                 <div className="scroll-track">
                     {[...messages, ...messages].map((msg, i) => (
