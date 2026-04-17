@@ -102,14 +102,15 @@ function Home() {
 
           <motion.div className="flex flex-col items-end" {...fadeRight}>
             <div className="flex items-start justify-start gap-2">
-              <p className="text-[3rem] text-luxury great-vibes-regular leading-none">
+              <p className="text-[2rem] xs:text-[3rem] text-luxury great-vibes-regular leading-none">
                 Our
               </p>
-              <p className="text-[6rem] text-luxury Bodoni leading-none">
+              <p className="text-[4.5rem] xs:text-[6rem] text-luxury Bodoni leading-none">
                 Love
               </p>
             </div>
-            <p className="text-[6rem] text-luxury Bodoni leading-none">
+
+            <p className="text-[4.5rem] xs:text-[6rem] text-luxury Bodoni leading-none">
               Begins
             </p>
           </motion.div>
@@ -166,7 +167,7 @@ function Home() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center text-Wine text-sm px-5">
+          className="text-center text-Wine text-sm w-full mx-auto">
           Chúng mình mong muốn được dành một khoảng thời gian ý nghĩa để cùng nhau trao gửi lời hứa thiêng liêng, sẽ luôn ghi nhớ và trân trọng tình yêu ấy suốt đời.
           Rất mong Bạn sẽ bớt chút thời gian đến tham dự, chứng kiến và chúc phúc cho chúng mình trong ngày trọng đại này.
         </motion.div>
