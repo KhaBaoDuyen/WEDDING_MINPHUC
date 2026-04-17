@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 function Home() {
   const [particles, setParticles] = useState<number[]>([]);
   const [guestName, setGuestName] = useState("Quý khách");
-  const [showWish, setShowWish] = useState(false);
+  const [showWish, setShowWish] = useState(true);
 
   useEffect(() => {
     setParticles(Array.from({ length: 30 }, (_, i) => i));
@@ -49,7 +49,7 @@ function Home() {
           behavior: "smooth",
         });
       }
-    }, 20);
+    }, 50);
 
     return () => {
       clearInterval(interval);

@@ -6,7 +6,6 @@ const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz22q9wdfo8kd5mDV0f7
 
 export default function WishLive() {
     const [messages, setMessages] = useState<any[]>([]);
-    const [, setVisibleMessages] = useState<any[]>([]);
     const [showForm, setShowForm] = useState(false);
     const [form, setForm] = useState({ name: "", text: "" });
     const [loading, setLoading] = useState(false);
@@ -21,35 +20,22 @@ export default function WishLive() {
         const fetchMessages = async () => {
             const res = await fetch(`${SCRIPT_URL}?type=wish`);
             const data = await res.json();
-            setMessages(data.slice(-10));
+
+            setMessages((prev) => {
+                const newData = data.slice(-10);
+
+                if (JSON.stringify(prev) === JSON.stringify(newData)) {
+                    return prev;
+                }
+
+                return newData;
+            });
         };
 
         fetchMessages();
-        const interval = setInterval(fetchMessages, 2000);
+        const interval = setInterval(fetchMessages, 3000);
         return () => clearInterval(interval);
     }, []);
-
-    useEffect(() => {
-        if (!messages.length) return;
-
-        let index = 0;
-
-        const interval = setInterval(() => {
-            setVisibleMessages((prev) => {
-                const next = [...prev, messages[index]];
-
-                if (next.length > 5) next.shift(); // giữ 5 dòng
-
-                return next;
-            });
-
-            index++;
-            if (index >= messages.length) index = 0; // 🔁 quay vòng
-
-        }, 1200);
-
-        return () => clearInterval(interval);
-    }, [messages]);
 
     const handleSend = async () => {
         if (!form.name || !form.text) {
@@ -93,8 +79,9 @@ export default function WishLive() {
                 </div>
             )}
 
+            {/* 🔥 LIST CHẠY */}
             <div className="fixed bottom-20 left-2 z-50 w-[70%] h-[200px] overflow-hidden pointer-events-none">
-                <div className="scroll-wrapper">
+                <div className="scroll-track">
                     {[...messages, ...messages].map((msg, i) => (
                         <div key={i} className="comment-item">
                             <span className="font-bold text-Gold">{msg.name}: </span>

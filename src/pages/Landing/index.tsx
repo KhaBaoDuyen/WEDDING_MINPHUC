@@ -10,7 +10,6 @@ export default function Landing({ onFinish, onStartAudio }: Props) {
     const [scene, setScene] = useState<1 | 2>(1);
     const [started, setStarted] = useState(false);
 
-
     const DURATION = 5;
 
     useEffect(() => {
