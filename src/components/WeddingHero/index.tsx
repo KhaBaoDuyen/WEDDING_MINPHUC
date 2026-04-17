@@ -32,7 +32,7 @@ function WeddingHero() {
     const daysInMonth = 31;
 
     return (
-        <div className="relative w-full h-[70vh] overflow-hidden">
+        <div className="relative w-full h-[80vh] overflow-hidden">
             <style>
                 {`
                 @keyframes floatUpDown {

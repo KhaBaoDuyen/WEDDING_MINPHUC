@@ -71,7 +71,7 @@ function Home() {
   return (
     <>
 
-      <div className="relative w-full h-[80vh] overflow-hidden ">
+      <div className="relative w-full h-[90vh] overflow-hidden ">
         <img
           src="/images/SAM11489.jpg"
           className="absolute inset-0 w-full h-full object-cover object-center"
@@ -198,7 +198,7 @@ function Home() {
                   transition={{ delay: 0.3, duration: 0.6 }}
                   viewport={{ once: true }}
                   className="font-bold playfair-display-700 text-center  leading-tight
-                  break-words text-xs max-[350px]:text-[10px] text-Gold uppercase ">
+                  break-words text-xs max-[350px]:text-[16px] text-Gold uppercase ">
                   <p >ÔNG: Nguyễn Đình Thành</p>
                   <p>BÀ: Hoàng Thị Tám</p>
                 </motion.div>
@@ -208,7 +208,7 @@ function Home() {
                   transition={{ delay: 0.5, duration: 0.6 }}
                   viewport={{ once: true }}
                   className="text-xs text-center text-Gold  ">
-                  Xóm 1-10, xã Trung Lộc, huyện Nghi Lộc, tỉnh Nghệ An
+                  Xóm 1-10, xã Trung Lộc, tỉnh Nghệ An
                 </motion.div>
               </div>
 
@@ -244,7 +244,7 @@ function Home() {
                   transition={{ delay: 0.3, duration: 0.6 }}
                   viewport={{ once: true }}
                   className="font-bold text-center playfair-display-700 text-xs
-                  max-[350px]:text-[10px] text-Gold uppercase  leading-tight
+                  max-[350px]:text-[16px] text-Gold uppercase  leading-tight
                   break-words">
                   <p>ÔNG: Võ Minh Dưỡng </p>
                   <p>BÀ: Thái Thị Mỹ Loan</p>
@@ -255,7 +255,7 @@ function Home() {
                   transition={{ delay: 0.5, duration: 0.6 }}
                   viewport={{ once: true }}
                   className="text-xs text-center text-Gold">
-                  Khóm 1, Ấp Thường Phước, huyện Hồng Ngự, tỉnh Đồng Tháp
+                  Tổ 1, ấp Thường Thới, xã Thường Phước, tỉnh Đồng Tháp
                 </motion.div>
               </div>
               <motion.div
@@ -325,7 +325,7 @@ function Home() {
               viewport={{ once: true }}
               className="flex flex-col justify-center items-center gap-2">
               <h1 className="text-center playfair-display-700 text-2xl">Tư Gia Nhà Gái</h1>
-              <h1 className="text-md text-center"> Khóm 1, Ấp Thường Phước, huyện Hồng Ngự, tỉnh Đồng Tháp</h1>
+              <h1 className="text-md text-center">Tổ 1, ấp Thường Thới, xã Thường Phước, tỉnh Đồng Tháp</h1>
               <a
                 href="https://www.google.com/maps/dir/?api=1&destination=10.8082273,105.23993"
                 target="_blank"

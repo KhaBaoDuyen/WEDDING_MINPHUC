@@ -79,7 +79,7 @@ export default function WishLive() {
                 </div>
             )}
 
-            <div className="fixed bottom-20 left-2 z-50 w-[70%] h-[200px] overflow-hidden pointer-events-none">
+            <div className="fixed bottom-16 left-2 z-50 w-[70%] h-[200px] overflow-hidden pointer-events-none">
                 <div className="scroll-track">
                     {[...messages, ...messages].map((msg, i) => (
                         <div key={i} className="comment-item">
@@ -92,7 +92,7 @@ export default function WishLive() {
 
             <button
                 onClick={() => setShowForm(true)}
-                className="fixed bottom-6 left-4 z-50 bg-Red text-white px-4 py-2 rounded-full shadow-lg"
+                className="fixed bottom-6 left-4 z-50 bg-Red/90 border-2 border-Red text-white px-4 py-2 rounded-full shadow-lg"
             >
                 Gửi lời chúc...
             </button>
