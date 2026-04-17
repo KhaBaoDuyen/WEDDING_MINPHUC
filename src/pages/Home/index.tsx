@@ -76,7 +76,7 @@ function Home() {
           src="/images/SAM11489.jpg"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-black/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
 
         <div className="pointer-events-none absolute inset-0 z-10">
           {particles.map((i) => {
