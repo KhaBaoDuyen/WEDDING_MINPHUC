@@ -327,17 +327,29 @@ function Home() {
               className="flex flex-col justify-center items-center gap-2">
               <h1 className="text-center playfair-display-700 text-2xl">Tư Gia Nhà Gái</h1>
               <h1 className="text-md text-center">Tổ 1, ấp Thường Thới, xã Thường Phước, tỉnh Đồng Tháp</h1>
-              <a
-                href="https://www.google.com/maps/dir/?api=1&destination=10.8082273,105.23993"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block w-full h-[200px]"
-              >
-                <iframe
+              <div className="relative w-full h-[220px] rounded overflow-hidden shadow-lg">
+                 <iframe
                   src="https://www.google.com/maps?q=10.8082273,105.23993&z=15&output=embed"
-                  className="w-full h-full pointer-events-none"
+                  className="w-full h-full scale-110 blur-[1px]"
                 />
-              </a>
+
+                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+
+                 <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between">
+                  <div className="text-white">
+                    <p className="text-sm opacity-80">Địa điểm tổ chức</p>
+                    <p className="text-lg font-semibold">Xem trên Google Maps</p>
+                  </div>
+
+                  <a
+                    href="https://maps.google.com/?q=10.8082273,105.23993"
+                    target="_blank"
+                    className="bg-Red text-Gold px-4 py-2 rounded-full text-sm font-medium shadow"
+                  >
+                    Chỉ đường →
+                  </a>
+                </div>
+              </div>
             </motion.div>
           </div>
         </div>

@@ -2,13 +2,14 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 const images = [
-  { src: "/images/SAM11489.jpg", span: "col-span-2 row-span-2", ratio: "aspect-[3/4]" }, // ảnh cưới dọc
+  { src: "/images/SAM11489.jpg", span: "col-span-2 row-span-2", ratio: "aspect-[3/4]" },  
   { src: "/images/SAM11560.jpg", ratio: "aspect-[3/4]" },
   { src: "/images/SAM11610.jpg", ratio: "aspect-[3/4]" },
-  { src: "/images/SAM11693.jpg", span: "col-span-3", ratio: "aspect-[16/9]" }, // ảnh ngang
-  { src: "/images/ab-trai.jpg", ratio: "aspect-[3/4] object-contain" },
+  { src: "/images/SAM11693.jpg", span: "col-span-3", ratio: "aspect-[16/9]" },  
+  { src: "/images/SAM11702.jpg", ratio: "aspect-[3/4] object-contain" },
   { src: "/images/SAM11746.jpg", ratio: "aspect-[3/4]" },
   { src: "/images/ab-phai.jpg", ratio: "aspect-[3/4]" },
+  { src: "/images/BD-1000.png", ratio: " col-span-3" },
 ];
 
 function Gallery() {
@@ -41,7 +42,7 @@ function Gallery() {
         ))}
       </div>
 
-      <motion.div
+      {/* <motion.div
         className="relative overflow-hidden mt-2"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -74,7 +75,7 @@ function Gallery() {
           </p>
 
         </div>
-      </motion.div>
+      </motion.div> */}
       {selectedImg && (
         <div
           className="fixed inset-0 bg-black/60 flex items-center justify-center z-50"
